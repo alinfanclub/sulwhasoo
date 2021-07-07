@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설화수</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/01.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu_open">
+            <i class="fas fa-bars">
+                <span>
+                    메뉴열기
+                </span>
+            </i>
+        </div>
+        <h1>
+            <a href="#">
+                <img src="img/logo_sulwhasoo.png">
+            </a>
+        </h1>
+        <div class="search">
+            <img src="img/ico_search_mo.png">
+        </div>
+        <div class="searchbar_close">
+            <img src="img/ico_close_mo.png">
+        </div>
+        <nav>
+            <div class="menu_top">
+                <h2>
+                    <a href="#">
+                        <img src="img//logo_sulwhasoo.png">
+                    </a>
+                </h2>
+                <div class="close_menu">
+                    <img src="img/ico_close_mo.png">
+                </div>
+            </div>
+            <ul>
+                <li class="depth01, brand">
+                    브랜드 빌리프
+                    <span>
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </li>
+                <li class="best_seller">
+                    베스트셀러
+                </li>
+                <li class="depth01, brand">
+                    제품
+                    <span>
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </li>
+                <li class="depth01, brand">
+                    설화수 포스트
+                    <span>
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </li>
+                <li class="depth01, brand">
+                    스파
+                    <span>
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </li>
+                <li class="depth01, brand">
+                    플래그십스토어
+                    <span>
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </li>
+            </ul>
+            <div class="menu_footer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                매장찾기
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <div>
+                            <a href="#">
+                                LANGUAGE
+                            </a>
+                            <span>
+                                한국/한국어
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+            </div>
+        </nav>
+        <div class="searchbar">
+            <input type="text" placeholder="검색어를 입력해 주세요.">
+            <input type="submit" value="검색">
+        </div>
+    </header>
+
+    <div class="main_visual">
+        <a href="#">
+            <img src="img/20210325_Main_01_KV_1_FirstCareActivatingSerum_Mobile.jpg">
+        </a>
+    </div>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.menu_open').click(function(){
+                $('nav').css({
+                    'left' : '0'
+                });
+            });
+            $('.menu_open').click(function(){
+                $('header').css('overflow', 'visible')
+            });
+            $('.close_menu').click(function(){
+                $('nav').css('left', '-200%');
+            });
+            $('.searchbar').hide();
+            $('.search').click(function(){
+                $('.searchbar').slideDown(100);
+                $('.searchbar_close').css(
+                    'display', 'block'
+                );
+                $('.search').css('display', 'none');
+            });
+            $('.searchbar_close').click(function(){
+                $('.searchbar').slideUp(100);
+                $('.searchbar_close').css(
+                    'display', 'none'
+                );
+                $('.search').css('display', 'block');
+            });
+        });
+    </script>
+</body>
+</html>
