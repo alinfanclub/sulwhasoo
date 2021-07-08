@@ -17,6 +17,16 @@
                 </span>
             </i>
         </div>
+        <div class="language_select">
+            <select>
+                <option>
+                    한국/한국어
+                </option>
+                <option>
+                    INTERNATIONAL/ENGLISH
+                </option>
+            </select>
+        </div>
         <h1>
             <a href="#">
                 <img src="img/logo_sulwhasoo.png">
@@ -24,6 +34,25 @@
         </h1>
         <div class="search">
             <img src="img/ico_search_mo.png">
+        </div>
+        <div class="search1920">
+            <ul>
+                <li>
+                    <a href="#">
+                        매장찾기
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        구매하기
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/ico_search_mo.png"> 
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="searchbar_close">
             <img src="img/ico_close_mo.png">
@@ -99,6 +128,40 @@
                         </div>
             </div>
         </nav>
+        <div class="nav1920">
+            <ul>
+                <li>
+                    <a href="#">
+                        브랜드 빌리프
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        베스트셀러
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        제품
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        설화수 포스트
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        스파
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        플래그쉽 스토어
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="searchbar">
             <input type="text" placeholder="검색어를 입력해 주세요.">
             <input type="submit" value="검색">
@@ -109,7 +172,13 @@
         <a href="#">
             <img src="img/20210325_Main_01_KV_1_FirstCareActivatingSerum_Mobile.jpg">
         </a>
+        <div class="min767">
+            <a href="#">
+                <img src="img/20210325_Main_01_KV_1_FirstCareActivatingSerum_Desktop.jpg">
+            </a>
+        <div>
     </div>
+    <div class="mask"></div>
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
@@ -122,7 +191,7 @@
                 $('header').css('overflow', 'visible')
             });
             $('.close_menu').click(function(){
-                $('nav').css('left', '-200%');
+                $('nav').css('left', '-2000%');
             });
             $('.searchbar').hide();
             $('.search').click(function(){
@@ -131,6 +200,7 @@
                     'display', 'block'
                 );
                 $('.search').css('display', 'none');
+                $('.mask').show();
             });
             $('.searchbar_close').click(function(){
                 $('.searchbar').slideUp(100);
@@ -138,6 +208,7 @@
                     'display', 'none'
                 );
                 $('.search').css('display', 'block');
+                $('.mask').hide();
             });
         });
     </script>
