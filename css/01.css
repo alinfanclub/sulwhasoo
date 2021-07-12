@@ -221,6 +221,7 @@ nav .depth02 li:last-child {
     background-color: #fff;
     box-sizing: border-box;
     display: none;
+    z-index: 90;
 }
 .searchbar1920_in {
     width: 1100px;
@@ -279,18 +280,7 @@ nav .depth02 li:last-child {
 .nav1920bg {
     display: none;;
 }
-
-.main_visual {
-    max-width:767px ;
-    width: 100%;
-    margin: 0 auto;
-    z-index: -1;
-}
-.main_visual > a img {
-    width: 100%;
-    z-index: -1;
-}
-.main_visual .min767 a img {
+.main_visual1920 {
     display: none;
 }
 
@@ -299,25 +289,10 @@ nav .depth02 li:last-child {
         max-width: 1023px;
         width: 100%;
     }
-    .main_visual {
-        max-width: 1023px;
-        width: 100%;
-    }
-    .main_visual > a img {
-        display: none;
-    }
-    .min767 {
-        max-width: 1023px;
-        width: 100%;
-    }
-    .main_visual .min767 a img {
-        display: block;
-        width: 100%;
-    }
-   
     .searchbar {
         max-width: 1023px;
         width: 100%;
+        z-index: 90;
     }
     .searchbar input[type="text"] {
         width: 90%;
@@ -329,7 +304,51 @@ nav .depth02 li:last-child {
         display: none;
     }
     .nav1920bg {
-        display: none;;
+        display: none;
+    }
+    .main_visual {
+        display: none;
+    }
+    .main_visual1920 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: 61vh;
+    }
+    .main_visual1920 div {
+        height: 61vh;
+    }
+    .slick-prev {
+        left: 0;
+        z-index: 80;
+        background: url('../img/20210324-main-kv-arr-l.png') center center / 45px 45px no-repeat;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-next {
+        right: 0;
+        z-index: 80;
+        background: url('../img/20210324-main-kv-arr-r.png') center center / 45px 45px no-repeat;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
+    .slick-prev:hover, .slick-prev:focus {
+        background: url('../img/20210324-main-kv-arr-l.png') center center / 45px 45px no-repeat;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-next:hover, .slick-next:focus {
+        background: url('../img/20210324-main-kv-arr-r.png') center center / 45px 45px no-repeat;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, .4);
     }
 }
 
@@ -500,14 +519,85 @@ nav .depth02 li:last-child {
         height: 0;
     }
     .main_visual {
+        display: none;
+    }
+    .main_visual1920 {
+        display: block;
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
+        height: 500px;
+    }
+    .main_visual1920 div {
+        height: 500px;
+    }
+    /* 슬라이드 텍스트 시작 */
+    .mvt {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: rgba(211, 181, 181, 0.513); */
+    }
+    .mvt_in {
+        padding-left: 63%;
+        box-sizing: border-box;
+        height: 500px;
+    }
+    .mvt_in .dl {
+        height: auto;
+        display: table-cell;
+        padding-top: 30%;
+    }
+    .mv_box02 .mvt_in .dl {
+        padding-top: 50%;
+    }
+    .mvt_in .dl > div {
+        height: auto;
+    }
+    .mvt_in .dl .dt {
+        font-size: 40px;
+        line-height: 54px;
         
     }
-    .min767 {
-        max-width: 1920px;
-        width: 100%;
-        /* display: none; */
+    .mvt_in .dl .dt_en,
+    .mvt_in .dl .dd{
+        font-size: 20px;
+    }
+    .mvt_in .dl .dd {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    /* 슬라이드 옵션 시작  */
+    .slick-prev {
+        left: 0;
+        z-index: 80;
+        background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
+        width: 68px;
+        height: 68px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-next {
+        right: 0;
+        z-index: 80;
+        background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
+        width: 68px;
+        height: 68px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
+    .slick-prev:hover, .slick-prev:focus {
+        background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
+        width: 68px;
+        height: 68px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .slick-next:hover, .slick-next:focus {
+        background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
+        width: 68px;
+        height: 68px;
+        background-color: rgba(255, 255, 255, .4);
     }
 }
