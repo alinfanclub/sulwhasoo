@@ -1,0 +1,45 @@
+@font-face {
+    font-family: '';
+    src: url('Arita-dotum-Medium_OTF00.woff2') format('woff2'),
+        url('Arita-dotum-Medium_OTF00.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('Arita-dotum-Bold_OTF00.woff2') format('woff2'),
+        url('Arita-dotum-Bold_OTF00.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('Arita-dotum-Light_OTF00.woff2') format('woff2'),
+        url('Arita-dotum-Light_OTF00.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('Arita-dotum-SemiBold_OTF00.woff2') format('woff2'),
+        url('Arita-dotum-SemiBold_OTF00.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '';
+    src: url('Arita-dotum-Thin_OTF00.woff2') format('woff2'),
+        url('Arita-dotum-Thin_OTF00.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
