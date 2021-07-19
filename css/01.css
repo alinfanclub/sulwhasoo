@@ -283,6 +283,77 @@ nav .depth02 li:last-child {
 .main_visual1920 {
     display: none;
 }
+/* main_visual */
+.main_visual div a img {
+    width: 100%;
+}
+.main_visual > div p {
+    text-align: center;
+}
+.main_visual > div P:nth-child(1) {
+    font-size: 6.25vw;
+    padding-top: 3vh;
+}
+.main_visual > div P:nth-child(2) {
+    font-size: 3.438vw;
+    padding-top: 1vh;
+}
+.main_visual > div P:nth-child(3) {
+    font-size: 4.722vw;
+    padding-top: 3vh;
+}
+/* .slick-dotted.slick-slider {
+    
+} */
+/* slick dots */
+    .main_visual .slick-dots {
+        margin: 0 auto;
+        bottom: 0;
+        position: static;
+        padding-top: 4vh;
+    }
+    
+
+    .slick-dots li {
+        width: 40px;
+        height: 5px;
+        margin: 0;
+    }
+    .slick-dots li button {
+        width: 40px;
+        height: 5px;
+        background-color: #adadad;
+        padding: 0;
+    }
+    .slick-dots li button:before {
+        display: none;
+    }
+    .slick-dots li.slick-active button {
+        background-color: #333;
+    }
+    /* con01 */
+    .con01_in {
+        width: calc(100% - 15%);
+        margin: 0 auto;
+    }
+    .slick-track > div {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    /* slick-slide slick-current > div > div {
+        width: 90%;
+    } */
+    .con01_slide > div > div  {
+        width: 90%;
+    }
+    .con01_slide > div {
+        /* width: 100%; */
+        text-align: center;
+    }
+    .con01_slide div img {
+        width: 100%;
+        background-color: #fafafa;
+    }
 
 @media screen and (min-width: 767px){
     header {
@@ -351,6 +422,7 @@ nav .depth02 li:last-child {
         height: 45px;
         background-color: rgba(255, 255, 255, .4);
     }
+
     .main_visual1920 {
         display: block;
         max-width:1920px;
@@ -427,6 +499,34 @@ nav .depth02 li:last-child {
     .slick-dots li.slick-active button {
         background-color: #333;
     }
+
+    /* con01 */
+    .con01 .slick-prev {
+        background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+        width: 42px;
+        height: 64px;
+        left: -42px;
+    }
+
+    .con01 .slick-prev:focus,
+    .con01 .slick-prev:hover {
+        background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+    }
+    .con01 .slick-next {
+        background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+        width: 42px;
+        height: 64px;
+        right: -42px;
+    }
+
+    .con01 .slick-next:focus,
+    .con01 .slick-next:hover {
+        background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+    }
 }
 
 
@@ -436,7 +536,7 @@ nav .depth02 li:last-child {
 
 @media screen and (min-width: 1023px) {
     header {
-        height: 108px;
+        height: 77px;
         max-width: 1100px;
         width: 100%;
         display: block;
@@ -444,11 +544,14 @@ nav .depth02 li:last-child {
         /* padding: 0 7%; */
         box-sizing:border-box;
         margin: 0 auto;
-        padding-bottom: 20px;
+    }
+    header h1 img {
+        width: 166px;
+        height: auto;
     }
     header h1 {
         text-align: center;
-        line-height: 60px;
+        line-height: 77px;
     }
     header .menu_open {
         display: none;
@@ -664,8 +767,8 @@ nav .depth02 li:last-child {
         padding-top: 15%;
     }
     
-    /* 슬라이드 옵션 시작  */
-    .slick-prev {
+    /* 슬라이드  버튼 옵션 시작  */
+    .main_visual1920 .slick-prev {
         left: 0;
         z-index: 80;
         background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
@@ -673,7 +776,7 @@ nav .depth02 li:last-child {
         height: 68px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    .slick-next {
+    .main_visual1920 .slick-next {
         right: 0;
         z-index: 80;
         background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
@@ -681,17 +784,17 @@ nav .depth02 li:last-child {
         height: 68px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    .slick-prev::before,
-    .slick-next::before {
+    .main_visual1920 .slick-prev::before,
+    .main_visual1920 .slick-next::before {
         display: none;
     }
-    .slick-prev:hover, .slick-prev:focus {
+    .main_visual1920 .slick-prev:hover, .slick-prev:focus {
         background: url('../img/20210324-main-kv-arr-l.png') 0 0 no-repeat;
         width: 68px;
         height: 68px;
         background-color: rgba(255, 255, 255, 0.4);
     }
-    .slick-next:hover, .slick-next:focus {
+    .main_visual1920 .slick-next:hover, .slick-next:focus {
         background: url('../img/20210324-main-kv-arr-r.png') 0 0 no-repeat;
         width: 68px;
         height: 68px;
@@ -723,5 +826,44 @@ nav .depth02 li:last-child {
     }
     .slick-dots li.slick-active button {
         background-color: #333;
+    }
+
+    
+    .con01_in {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .con01_in .con01_slide {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .con01 .slick-prev {
+        background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+        width: 42px;
+        height: 64px;
+        left: -42px;
+        
+    }
+
+    .con01 .slick-prev:focus,
+    .con01 .slick-prev:hover {
+        background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+    }
+    .con01 .slick-next {
+        background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
+        width: 42px;
+        height: 64px;
+        right:-42px;
+    }
+
+    .con01 .slick-next:focus,
+    .con01 .slick-next:hover {
+        background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
+        background-color: rgba(255, 255, 255, .4);
     }
 }
