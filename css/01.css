@@ -352,9 +352,12 @@ nav .depth02 li:last-child {
     }
     .con01_slide div img {
         width: 100%;
-        background-color: #fafafa;
+        /* background-color: #fafafa; */
     }
-
+    .con01 .slick-prev,
+    .con01 .slick-next {
+        display: none;
+    }
 @media screen and (min-width: 767px){
     header {
         max-width: 1023px;
@@ -501,6 +504,20 @@ nav .depth02 li:last-child {
     }
 
     /* con01 */
+    .con01 {
+        width: 100%;
+        position: relative;
+        margin-top: 8.333vh;
+    }
+    .con01_in {
+        width: calc(100% -0%);
+    }
+    .con01_title {
+        font-family: 'aritaum';
+        font-weight: bold;
+        font-size: 1.944vh;
+    }
+    
     .con01 .slick-prev {
         background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
         background-color: rgba(255, 255, 255, .4);
@@ -526,6 +543,34 @@ nav .depth02 li:last-child {
     .con01 .slick-next:hover {
         background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
         background-color: rgba(255, 255, 255, .4);
+    }
+    .con01_slide_product_name {
+        font-size: 1.389vh;
+        font-family: 'aritaum';
+        font-weight: bold;
+    }
+    .con01_slide_product_name_en {
+        font-size: 1.111vh;
+        font-family: 'aritaum';
+    }
+    .con01_slide_price {
+        font-size: 1.111vh;
+        font-weight: bold;
+        font-family: 'aritaum';
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+    .con01 .slick-dots {
+        position: static;
+        padding: 0;
+        height: auto;
+        padding-top: .8vh;
+    }
+    .con01 .slick-dots li {
+        width: 18vw;
+    }
+    .con01 .slick-dots li button {
+        width: 18vw;
     }
 }
 
@@ -828,16 +873,27 @@ nav .depth02 li:last-child {
         background-color: #333;
     }
 
-    
+
+    /* con01 */
+    .con01 {
+        margin-top: 8.333vh;
+    }
     .con01_in {
         max-width: 1440px;
         width: 100%;
         margin: 0 auto;
+        position: relative;
+    }
+    .con01_title {
+        font-family: 'aritaum';
+        font-weight: bold;
+        font-size: 1.944vh;
     }
     .con01_in .con01_slide {
         max-width: 1300px;
         width: 100%;
         margin: 0 auto;
+        margin-top: 1.736vh;
     }
     .con01 .slick-prev {
         background: url('../img/20210324_main_recomm_prev.png') center center / cover no-repeat;
@@ -865,5 +921,33 @@ nav .depth02 li:last-child {
     .con01 .slick-next:hover {
         background: url('../img/20210324_main_recomm_next.png') center center / cover no-repeat;
         background-color: rgba(255, 255, 255, .4);
+    }
+    .con01_slide_product_name {
+        font-size: 1.389vh;
+        font-family: 'aritaum';
+        font-weight: bold;
+    }
+    .con01_slide_product_name_en {
+        font-size: 1.111vh;
+        font-family: 'aritaum';
+    }
+    .con01_slide_price {
+        font-size: 1.111vh;
+        font-weight: bold;
+        font-family: 'aritaum';
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+    .con01 .slick-dots {
+        position: static;
+        padding: 0;
+        height: auto;
+        padding-top: 3vh;
+    }
+    .con01 .slick-dots li {
+        width: 8vw;
+    }
+    .con01 .slick-dots li button {
+        width: 8vw;
     }
 }

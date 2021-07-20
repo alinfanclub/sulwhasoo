@@ -657,13 +657,13 @@
                 </div>
                 <div>
                     <a href="#">
-                        <img src="img/20210604_final_main_set_thumbnails_pc.png">
+                        <img src="img/20210429_final_main_set_thumbnails-02_pc.png">
                         <div class="con01_text">
                             <div class="con01_slide_product_name">
-                                퍼펙팅 쿠션
+                                상백크림 듀오세트
                             </div>
                             <div class="con01_slide_product_name_en">
-                                Perfecting Cushion
+                                UV Wise Brightening Multi Protector Duo Set
                             </div>
                             <div class="con01_slide_price">
                                 75,000원
@@ -874,7 +874,8 @@
             $('.main_visual1920').slick({
                 autoplay: false,
                 autoplaySpeed: 4000,
-                dots: true
+                dots: true,
+                swipe: false
             });
         })
         $('.main_visual').slick({
@@ -883,17 +884,33 @@
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 2000,
+            swipe: false
+            
         });
 
         $(function(){
             $('.con01_slide').slick({
                 infinite: true,
                 slidesToShow: 4,
-                slidesToScroll: 2
+                slidesToScroll: 4,
+                swipe: false,
+                dots: true,
+                responsive: [
+                    {
+                    breakpoint:767,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        swipe: false,
+                        autoplay: true,
+                        autoplaySpeed: 2000
+                        }
+                    }
+                ]
             });
-	
         });
     </script>
 </body>
